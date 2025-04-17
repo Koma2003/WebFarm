@@ -1,0 +1,59 @@
+html(lang="ru")
+  head
+    script(src="https://code.jquery.com/jquery-3.6.0.min.js")
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    title Птицы - Фермерская душа
+    link(rel="stylesheet", href="/stylesheets/styles.css")
+    link(rel="stylesheet", href="/stylesheets/more.css")
+    link(rel="icon", href="images/иконка.png", type="image/png")
+
+  body
+    header
+      .logo-block
+        a(href="/")
+          img(src="images/logo4.png", alt="logo")
+          .company-name Фермерская душа
+      .name-block
+        .name-page
+          h2 Птицы
+
+    main
+      a.back-link(href="/") ← Назад
+      .wrapper
+        aside
+          .aside-all
+            h2 МЕНЮ
+            nav
+              ul.aside-menu
+                li.active
+                  a(href="/birds") Для птиц
+                li
+                  a(href="/cows") Для коров
+                li
+                  a(href="/horses") Для лошадей
+
+        article
+          section
+            p Птицы требуют особого ухода.
+            h3.collapsible Кормление
+            .content
+              p Птицам нужно предоставлять разнообразный корм.
+            h3.collapsible Обогрев
+            .content
+              p Важно поддерживать оптимальную температуру.
+            p
+              img(src="images/ж-птицы.jpg", width="300", alt="Птицы")
+
+    footer
+      .footer
+        #social
+          h3 SOCIAL NETWORKS
+          a.social-icon.twitter(href="http://twitter.com/")
+          a.social-icon.google(href="http://google.com/")
+        #footer-logo
+          a(href="#")
+            img(src="images/logo4.png", alt="Логотип")
+
+    script(src="/javascripts/js.js")
+    script(src="/javascripts/interactive.js")

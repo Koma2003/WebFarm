@@ -1,0 +1,526 @@
+/* Основные стили */
+.animal-links {
+    margin-top: 20px;
+}
+
+.animal-links ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 15px;
+    justify-content: left;
+}
+
+.animal-links a {
+    text-decoration: none;
+    color: green;
+    font-weight: bold;
+}
+
+.animal-links a:hover {
+    text-decoration: underline;
+}
+
+/* Кнопка "Назад" */
+.back-link {
+    display: inline-block;
+    padding: 8px 12px;
+    background-color: #ee9264;
+    color: white;
+    font-size: 13px;
+    font-family: 'Oswald', sans-serif;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.2s;
+    margin-top: 10px;
+}
+
+.back-link:hover {
+    background-color: #d77e4f;
+    transform: translateX(-5px);
+}
+
+.back-link:focus {
+    outline: none;
+    box-shadow: 0 0 5px rgba(255, 165, 0, 0.8);
+}
+
+/* Важные элементы */
+.important {
+    color: red;
+}
+
+/* Раскрывающиеся блоки */
+.content-section {
+    margin-bottom: 20px;
+}
+
+.expandable {
+    cursor: pointer;
+    padding: 10px;
+    background-color: #f3f3f3;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.expandable:hover {
+    background-color: #e7e7e7;
+}
+
+.content-block {
+    display: none;
+    padding: 15px;
+    background-color: #f9f9f9;
+    border-radius: 0 0 5px 5px;
+    margin-top: 5px;
+}
+
+/* Форма обратной связи */
+#feedback-form-container {
+    
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #fbe7bb;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    z-index: 1000;
+    width: 250px;
+    max-width: 90%;
+}
+
+#feedback-form input,
+#feedback-form textarea {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+#feedback-form button {
+    width: 100%;
+    padding: 8px;
+    background-color: #ee9264;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* Анимация изображений */
+.img-spacing img {
+    transition: transform 0.3s;
+    margin-right: 15px;
+}
+
+.img-spacing img:hover {
+    transform: scale(1.05);
+}
+
+/* Основные стили меню */
+.top-menu li {
+    padding: 10px 30px;
+    margin: 0;
+    background: rgba(0,0,0,0.1);
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.top-menu li:hover {
+    background: rgba(0,0,0,0.2);
+}
+
+.top-menu a {
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Стили для основного контента */
+.content-section {
+    margin-left: 280px;
+    padding: 20px;
+}
+
+/* Стили для бокового меню */
+.aside-menu li {
+    cursor: pointer;
+    padding: 8px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.aside-menu li.active {
+    color: #ee9264;
+    font-weight: bold;
+}
+
+/* Дополнительные стили */
+.important {
+    color: red;
+}
+
+.animal-links a {
+    color: green;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.animal-links a:hover {
+    text-decoration: underline;
+}
+
+/* Анимация текстовых блоков */
+/* Анимация текстовых блоков */
+.collapsible {
+    background-color: #f1f1f1;
+    color: #333;
+    cursor: pointer;
+    padding: 15px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 18px;
+    margin-top: 10px;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.collapsible:hover {
+    background-color: #ddd;
+}
+
+.collapsible.active {
+    background-color: #ee9264;
+    color: white;
+}
+
+.content {
+    padding: 0 18px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    background-color: white;
+    border-radius: 0 0 4px 4px;
+}
+
+/* Модальное окно */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 500px;
+    border-radius: 8px;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* Форма обратной связи */
+#feedback-form-container {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #fbe7bb;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    z-index: 1000;
+    width: 250px;
+    max-width: 90%;
+}
+
+#feedback-form input,
+#feedback-form textarea {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+#feedback-form button {
+    width: 100%;
+    padding: 8px;
+    background-color: #ee9264;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.name-block {
+    margin-top: 18px;
+    background: linear-gradient(90deg, #e76d40, #f8c68a);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 0 0 8px 8px;
+    display: flex;
+    align-items: center;
+    height: 50px; /* например */
+    padding: 0 20px;
+}
+
+.name-page {
+    margin-left: 250px;
+    font-size: 18px;
+    color: #4a2b0b;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    animation: fadeIn 0.8s ease-in-out;
+}
+
+/* Добавим плавную анимацию */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Иконка (если используешь Font Awesome, например) */
+.name-page::before {
+    content: "🏡"; /* или иконка: \f074 с FontAwesome */
+    font-size: 26px;
+}
+
+
+.content-section { display: none; }
+        #main { display: block; }
+        
+        .top-menu li.active {
+            background: #ee9264 !important;
+        }
+        .top-menu li.active a {
+            color: white !important;
+        }
+        
+        /* Стили для выпадающих окон */
+        .collapsible {
+            background-color: #f8f8f8;
+            color: #333;
+            cursor: pointer;
+            padding: 15px;
+            width: 100%;
+            border: none;
+            text-align: left;
+            outline: none;
+            font-size: 16px;
+            margin: 10px 0 0;
+            border-radius: 5px;
+            transition: all 0.3s;
+            position: relative;
+        }
+        
+        .collapsible:after {
+            content: '+';
+            font-size: 18px;
+            color: #777;
+            position: absolute;
+            right: 15px;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+        
+        .collapsible.active:after {
+            content: '-';
+        }
+        
+        .collapsible:hover {
+            background-color: #eee;
+        }
+        
+        .collapsible.active {
+            background-color: #ee9264;
+            color: white;
+            border-radius: 5px 5px 0 0;
+        }
+        /*стиль модального окна регистрации и входа*/
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1000;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5); /* чуть темнее фон */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+          }
+          
+          .modal-content {
+            background-color: #fff;
+            padding: 25px 30px;
+            border-radius: 12px;
+            width: 300px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+            position: relative;
+            animation: slideDown 0.3s ease-out;
+            font-family: sans-serif;
+          }
+          
+          @keyframes slideDown {
+            from {
+              opacity: 0;
+              transform: translateY(-30px);
+            }
+            to {
+              opacity: 1;
+              transform: translateY(0);
+            }
+          }
+          
+          .close {
+            color: #888;
+            position: absolute;
+            right: 10px;
+            top: 10px;
+            font-size: 24px;
+            font-weight: bold;
+            cursor: pointer;
+          }
+          
+          .close:hover {
+            color: #444;
+          }
+          
+          .auth-form {
+            display: flex;
+            flex-direction: column;
+          }
+          
+          .auth-form label {
+            margin-top: 10px;
+            margin-bottom: 5px;
+            font-weight: 600;
+          }
+          
+          .auth-form input {
+            padding: 5px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            outline: none;
+          }
+          
+          .auth-form input:focus {
+            border-color: #537599
+          }
+          
+          .auth-form button[type="submit"] {
+            margin-top: 15px;
+            padding: 6px;
+            background-color: #6f8caa;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-weight: bold;
+            cursor: pointer;
+          }
+          
+          .auth-form button[type="submit"]:hover {
+            background-color: #4c6d90;
+          }
+          
+          .form-toggle {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 15px;
+            gap: 10px;
+          }
+          
+          .form-toggle button {
+            flex: 1;
+            padding: 8px;
+            background-color: #eee;
+            border: none;
+            border-radius: 5px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background-color 0.2s ease;
+          }
+          
+        .form-toggle button:hover{
+            background-color: #a9c7e8;
+            
+        }
+
+        .form-toggle button.active {
+            background-color: #6f8caa;
+            color: white;
+          }
+
+
+.user-menu {
+  position: relative;
+  display: inline-block;
+  
+}
+
+.user-menu span {
+  cursor: pointer;
+  padding: 5px 15px;
+  background: #4CAF50;
+  color: white;
+  border-radius: 5px;
+}
+
+.user-menu ul {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  list-style: none;
+  background: white;
+  border: 1px solid #ccc;
+  margin: 0;
+  padding: 5px 5px;
+  display: none;
+  z-index: 100;
+}
+
+.user-menu:hover ul {
+  display: block;
+  border: 5px;
+}
+
+.user-menu ul li {
+  padding: 5px 15px;
+}
+
+.user-menu ul li a {
+  text-decoration: none;
+  color: #333;
+}
+
+.user-menu ul li a:hover {
+  color: red;
+}

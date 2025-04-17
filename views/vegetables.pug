@@ -1,0 +1,107 @@
+doctype html
+html(lang="ru")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    title Овощи - Фермерская душа
+    link(rel="stylesheet", href="/stylesheets/styles.css")
+    link(rel="stylesheet", href="/stylesheets/more.css")
+    link(rel="icon", href="images/иконка.png", type="image/png")
+    script(src="https://code.jquery.com/jquery-3.6.0.min.js")
+
+  body
+    header
+      .logo-block
+        a(href="/")
+          img(src="images/logo4.png", alt="logo")
+          .company-name Фермерская душа
+      .name-block
+        .name-page
+          h2 Овощи
+
+    main
+      a(href="/", class="back-link") ← Назад
+      .wrapper
+        aside
+          .aside-all
+            h2 МЕНЮ
+            nav
+              ul.aside-menu
+                li.active
+                  a(href="/vegetables") Овощи
+                li
+                  a(href="/fruits") Фрукты
+                li
+                  a(href="/flowers") Цветы
+
+        article
+          section
+            p Правильный уход за овощами обеспечит богатый урожай.
+            h3.collapsible Основные принципы
+            .content
+              p Овощи требуют регулярного полива, особенно в жаркую погоду. Важно соблюдать сроки посадки и сбора урожая.
+              table.farm-table
+                thead
+                  tr
+                    th Овощ
+                    th Срок посадки
+                    th Сбор урожая
+                    th Полив
+                tbody
+                  tr
+                    td Морковь
+                    td Апрель-Май
+                    td Июль-Сентябрь
+                    td Умеренный
+                  tr
+                    td Картофель
+                    td Май
+                    td Август-Сентябрь
+                    td Регулярный
+                  tr
+                    td Огурцы
+                    td Май-Июнь
+                    td Июль-Август
+                    td Обильный
+
+            h3.collapsible Удобрение
+            .content
+              p Используйте органические удобрения для лучшего роста овощей:
+              ul
+                li Компост - 5 кг на 1 м²
+                li Зола - 1 стакан на лунку
+                li Куриный помёт - разводить 1:15 с водой
+
+            h3.collapsible Болезни и вредители
+            .content
+              p Основные проблемы и методы борьбы:
+              table.farm-table
+                thead
+                  tr
+                    th Проблема
+                    th Признаки
+                    th Решение
+                tbody
+                  tr
+                    td Фитофтороз
+                    td Бурые пятна на листьях
+                    td Обработка медьсодержащими препаратами
+                  tr
+                    td Тля
+                    td Липкие листья, скручивание
+                    td Опрыскивание мыльным раствором
+
+            p
+              img(src="images/р-овощи.jpg", width="300", alt="Овощи")
+
+    footer
+      .footer
+        #social
+          h3 SOCIAL NETWORKS
+          a.social-icon.twitter(href="http://twitter.com/")
+          a.social-icon.google(href="http://google.com/")
+        #footer-logo
+          a(href="#")
+            img(src="images/logo4.png", alt="Логотип")
+            
+    script(src="/javascripts/js.js")
