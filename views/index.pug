@@ -1,0 +1,215 @@
+doctype html
+html
+  head
+    meta(charset="utf-8")
+    title Советы для фермеров
+    link(rel="stylesheet", href="/stylesheets/styles.css")
+    link(rel="stylesheet", href="/stylesheets/more.css")
+    link(rel="icon", href="images/logo3.png", type="image/png")
+    script(src="https://code.jquery.com/jquery-3.6.0.min.js")
+
+  body
+    header
+      .header-top
+        .logo-block
+          a
+            img(src="images/logo4.png", alt="logo")
+            .company-name Фермерская душа
+          .auth-wrapper
+            button#auth-btn(type="button") Личный кабинет
+            .user-menu(style="display: none")
+              span#user-name Имя
+              ul
+                li: a#logout-btn(href="#") Выйти
+
+      .header-middle
+        .header-right
+          form(name="search", class="input", action="#", method="get")
+            input(type="text", name="q", placeholder="Введите")
+            button(type="sвсе ubmit") Найти
+          
+      
+      nav.header-nav
+        .nav-wrapper
+          ul.top-menu
+            li.active: a(href="#main") Главная
+            li: a(href="#plants") Растениеводство
+            li: a(href="#animals") Животноводство
+            li: a(href="#equipment") Техника
+            li: a(href="#contacts") Контакты
+
+        
+    main
+      aside
+        .aside-all
+          h2 МЕНЮ
+          nav
+            ul.aside-menu
+              li.active(data-section="main")
+                a(href="#about") О нас
+              li(data-section="news")
+                a(href="#news") Новости
+              li(data-section="where-to-buy")
+                a(href="#where-to-buy") Где купить
+              li(data-section="calendar")
+                a(href="#calendar") Лунный календарь
+
+      article
+        section#main.content-section
+          h2 Добро пожаловать!
+          p Здесь вы найдете полезные советы по ведению фермерского хозяйства.
+
+          h3.collapsible Наши услуги
+          .content
+            p Мы предоставляем консультации по всем вопросам фермерства, включая растениеводство, животноводство и техническое оснащение.
+
+          h3.collapsible Специальные предложения
+          .content
+            p В этом сезоне действуют специальные условия на закупку семян и саженцев.
+
+        section#about.content-section
+          h2 О нас
+          p Мы — команда профессиональных фермеров.
+
+          h3.collapsible Наша история
+          .content
+            p Начав с небольшого семейного хозяйства в 2005 году, мы постепенно расширяли свои знания и опыт.
+
+          h3.collapsible Наша команда
+          .content
+            p В нашей команде работают профессиональные агрономы, зоотехники и специалисты по сельскохозяйственной технике.
+
+        section#news.content-section
+          h2 Новости
+          p Последние новости сельского хозяйства:
+
+          h3.collapsible Посевная кампания
+          .content
+            p Началась посевная кампания! Специалисты рекомендуют завершить посевные работы до конца апреля.
+
+          h3.collapsible Новые сорта
+          .content
+            p Новые сорта пшеницы показали урожайность на 20% выше среднего.
+
+        section#where-to-buy.content-section
+          h2 Где купить
+          p Нашу продукцию можно приобрести в следующих магазинах:
+
+          h3.collapsible Режим работы
+          .content
+            p Наши магазины работают с 8:00 до 20:00 без выходных.
+
+          h3.collapsible Акции
+          .content
+            p При покупке на сумму от 50 000 рублей - бесплатная доставка.
+
+        section#calendar.content-section
+          h2 Лунный календарь
+          p Актуальные рекомендации по лунному календарю:
+
+          h3.collapsible Текущий месяц
+          .content
+            p 11-15 апреля - лучшие дни для посадки корнеплодов.
+
+          h3.collapsible Как пользоваться
+          .content
+            p Лунный календарь основан на фазах луны и ее влиянии на растения.
+
+        section#plants.content-section
+          h2 Растениеводство
+          p Советы по выбору семян, удобрению и уходу за растениями.
+          p.img-spacing
+            img(src="images/р-овощи.jpg", width="230", height="180", alt="Овощи")
+            img(src="images/р-яблоня.jpg", width="230", height="180", alt="Фрукты")
+            img(src="images/р-поле.jpg", width="230", height="180", alt="Поле")
+          .animal-links
+            h3.collapsible Подробнее:
+            .content
+              ul
+                li: a(href="/vegetables") Овощи
+                li: a(href="/fruits") Фрукты
+                li: a(href="/flowers") Цветы
+
+        section#animals.content-section
+          h2 Животноводство
+          p Как ухаживать за животными, чем кормить, и как следить за их здоровьем.
+          p.img-spacing
+            img(src="images/ж-птицы.jpg", width="230", height="180", alt="Птицы")
+            img(src="images/ж-корова.jpg", width="230", height="180", alt="Коровы")
+            img(src="images/ж-лошадь.jpg", width="230", height="180", alt="Лошади")
+          .animal-links
+            h3.collapsible Подробнее:
+            .content
+              ul
+                li: a(href="/birds") Птицы
+                li: a(href="/cows") Коровы
+                li: a(href="/horses") Лошади
+
+        section#equipment.content-section
+          h2 Техника
+          p Выбор и обслуживание сельскохозяйственной техники. Узнайте, как выбрать технику в зависимости от типа хозяйства, какие модели наиболее надежны и экономичны, как проводить регулярное техническое обслуживание и мелкий ремонт. Мы также рассматриваем современные технологии автоматизации и точного земледелия.
+
+        section#contacts.content-section
+          h2 Контакты
+          p Связаться с нами: farmer@example.com.
+          p Тел: +7(800)-574-88-44
+          p Мы будем рады вашим вопросам, предложениям и отзывам. Наши специалисты готовы помочь вам в любых аспектах ведения фермерского хозяйства. Также вы можете подписаться на нашу рассылку, чтобы получать актуальные новости и советы.
+          h3.collapsible Отзывы
+          .content
+            ul#feedback-list
+          
+
+    footer
+      .footer
+        #social
+          h3 SOCIAL NETWORKS
+          a(href="http://twitter.com/", class="social-icon twitter")
+          a(href="http://google.com/", class="social-icon google")
+        #footer-logo
+          a
+            img(src="images/logo4.png", alt="Логотип")
+
+    #feedback-form-container
+      h3 Обратная связь
+      if user
+        form#feedback-form(action="/api/feedback", method="POST")
+          input(type="text" name="name" value=user.username required readonly)
+          input(type="email" name="email" value=user.email required readonly)
+          textarea(name="message" placeholder="Ваше сообщение" required)
+          button(type="submit") Отправить
+      else
+        .auth-required-message
+          p Для отправки сообщения необходимо войти в систему
+
+
+    #auth-modal.modal(style="display:none")
+      .modal-content
+        span.close ×
+
+        .form-toggle
+          button#show-register Регистрация
+          button#show-login.active Вход
+
+        form#register-form.auth-form(style="display:none")
+          label(for="reg-username") Имя пользователя:
+          input(type="text", name="username", id="register-username", required)
+          label(for="reg-usermail") Почта:
+          input(type="text", name="email", id="register-email", required)
+          label(for="reg-password") Пароль:
+          input(type="password", name="password", id="register-password", required)
+          button(type="submit") Зарегистрироваться
+
+        form#login-form.auth-form
+          label(for="login-username") Имя пользователя:
+          input(type="text", name="username", id="login-username", required)
+          label(for="login-usermail") Почта:
+          input(type="text", name="email", id="login-usermail", required)
+          label(for="login-password") Пароль:
+          input(type="password", name="password", id="login-password", required)
+          button(type="submit") Войти
+
+
+
+    script(src="/javascripts/js.js")
+
+    
